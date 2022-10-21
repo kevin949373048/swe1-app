@@ -5,7 +5,7 @@ script:
 - black --check .
 - black --check .
 - flake8 .
-- coverage run -a --source="." manage.py
+- coverage run --source=hello,polls manage.py test
 install:
 - pip install -r requirements.txt
 - pip install black
